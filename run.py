@@ -79,13 +79,10 @@ from pathlib import Path
 
 def load_InstantMeshModel(config_from_node):
     original_directory = os.getcwd()
-
-    target_directory = os.path.join(original_directory, r"ComfyUI\custom_nodes\ComfyUI-InstantMesh")
-
-    scripts_directory = os.path.join(original_directory, r"python_embeded\Scripts")
+    target_directory = os.path.join(original_directory, "custom_nodes", "ComfyUI-InstantMesh")
+    scripts_directory = os.path.join(original_directory, "python_embeded", "Scripts")
 
     os.environ['PATH'] += os.pathsep + scripts_directory
-
     os.chdir(target_directory)
 
     try:
@@ -129,13 +126,10 @@ def run_InstantMesh(model, config_from_node, input_path_from_node, diffusion_ste
     no_rembg = not rem_bg
 
     original_directory = os.getcwd()
-
-    target_directory = os.path.join(original_directory, r"ComfyUI\custom_nodes\ComfyUI-InstantMesh")
-
-    scripts_directory = os.path.join(original_directory, r"python_embeded\Scripts")
+    target_directory = os.path.join(original_directory, "custom_nodes", "ComfyUI-InstantMesh")
+    scripts_directory = os.path.join(original_directory, "python_embeded","Scripts")
 
     os.environ['PATH'] += os.pathsep + scripts_directory
-
     os.chdir(target_directory)
 
     try:
