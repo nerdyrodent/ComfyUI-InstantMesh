@@ -6,20 +6,15 @@
 
 ## Installation
 
-First, this extension depends on [ComfyUI-3D-Pack](https://github.com/MrForExample/ComfyUI-3D-Pack), please install it if not, and make sure it works well:
-1. stop ComfyUI if it is running
-2. goto `ComfyUI/custom_nodes` dir in terminal(cmd)
-3. `git clone https://github.com/MrForExample/ComfyUI-3D-Pack`
-4. cd `ComfyUI-3D-Pack`
-5. run `install_windows_portable_win_py311_cu121.bat`
+1. Install [ComfyUI-3D-Pack](https://github.com/MrForExample/ComfyUI-3D-Pack) using comfyui manager
+2. Don't forget to run the post_install ;)
+3. Install this custom node using comfyui manager
+4. Restart ComfyUI.
 
-(Don't start ComfyUI at this moment)  
-Then, install this extension:
-1. `git clone https://github.com/jtydhr88/ComfyUI-InstantMesh`
-2. cd `ComfyUI-InstantMesh`
-3. run `install_windows_portable_win_py311_cu121.bat`
+# Changes in this fork
 
-Start your ComfyUI.
+1. Standard directory paths (platform agnostic, no extra "ComfyUI" directory)
+2. Standard save location (excluding all temp file locations)
 
 ## How to use
 
