@@ -121,11 +121,12 @@ def load_InstantMeshModel(config_from_node):
     return model,config_from_node
 
 def run_InstantMesh(model, config_from_node, input_path_from_node, diffusion_steps=75, view=6, export_texmap=True,
-                    store_video=False, rem_bg=True, output_path='outputs/', seed=42, scale=1.0, distance=4.5):
+                    store_video=False, rem_bg=True, seed=42, scale=1.0, distance=4.5):
 
     no_rembg = not rem_bg
 
     original_directory = os.getcwd()
+    output_path = os.path.join(original_directory, "output")
     target_directory = os.path.join(original_directory, "custom_nodes", "ComfyUI-InstantMesh")
     scripts_directory = os.path.join(original_directory, "python_embeded","Scripts")
 
